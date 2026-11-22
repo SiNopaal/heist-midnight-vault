@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101313">
+<title>THE LAST LIGHT — A Quiet Heist</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="scene" aria-label="Stealth heist game: slip past guards, take the moonstone, and escape" tabindex="0"></canvas>
+<header class="topbar"><a class="wordmark" href="#" aria-label="The Last Light"><span class="sigil">✳</span><span>THE LAST LIGHT<small>AN AFTER-HOURS OPERATION</small></span></a><div class="location"><i></i> MUSEUM OF SMALL WONDERS <b>·</b> EAST WING</div><div class="inventory"><span title="Noise-making decoys">◉ <b id="coins">2</b></span><span title="Smoke veil">◌ <b id="smoke">1</b></span><button id="sound" aria-label="Mute sound">♫</button></div></header>
+<main class="interface"><section class="exposure panel"><div class="exposure-head"><span>THEY’RE LOOKING</span><strong id="heat-value">UNSEEN</strong></div><div class="meter"><span id="heat-fill"></span><i></i></div><div class="exposure-foot"><span>Stay low. Stay moving.</span><span id="alarm-note">NIGHT IS ON YOUR SIDE</span></div></section>
+<section class="mission panel"><div class="mission-mark" id="objective-icon">◇</div><div><small id="objective-step">01 — THE COLLECTION</small><strong id="objective-text">Find the moonstone</strong><span id="objective-hint">Slip through the gallery. Mind the glass.</span></div><kbd id="objective-key">E</kbd></section>
+<section class="controls panel" aria-label="Controls"><div><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><label>MOVE</label></div><div><span><kbd>SHIFT</kbd></span><label>CROUCH</label></div><div><span><kbd>CLICK</kbd></span><label>THROW DECOY</label></div><div><span><kbd>Q</kbd></span><label>SMOKE VEIL</label></div><div><span><kbd>E</kbd></span><label>INTERACT</label></div></section>
+<div class="result" id="result" hidden><span id="result-stamp">A CLEAN GETAWAY</span><h1 id="result-title">Gone before dawn.</h1><p id="result-copy">The moonstone has a new home.</p><button id="restart">ANOTHER NIGHT <span>↗</span></button></div>
+</main><div class="toast" id="toast" aria-live="polite" role="status"></div><div class="sr-only" id="announcer" aria-live="polite" role="status"></div>
+<script type="module" src="./src/main.mjs"></script>
+</body></html>
